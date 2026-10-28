@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menu Inu: portal gastronómico saludable de la cafetería escolar. Menú diario, valor calórico y calculadora de IMC.">
+  <title>Menu Inu | Cafetería Escolar Saludable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="logo" src="imagenes/logo.png" alt="Logo del Instituto Nacional de Usulután">
+      <h1>Menu Inu: Cafetería Saludable</h1>
+      <p class="subtitle">Descubre el menú del día, sus calorías y aprende a comer mejor en la escuela</p>
+      <button id="theme-toggle" class="theme-btn" type="button">Modo Claro</button>
+    </div>
+  </header>
+
+  <!-- NAVEGACION -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#menu">Menú del Día</a></li>
+      <li><a href="#calculadora">Calculadora IMC</a></li>
+      <li><a href="#consejos">Consejos</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- INICIO -->
+    <section id="inicio">
+      <h2 class="greeting" id="saludo">¡Bienvenido a Menu Inu, la cafetería saludable!</h2>
+
+      <article class="hero-card">
+        <div class="hero-art">
+          <svg viewBox="0 0 900 520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración vectorial de un plato saludable con verduras, limón, manzana y banano">
+            <defs>
+              <radialGradient id="fondo" cx="50%" cy="35%" r="80%">
+                <stop offset="0" stop-color="#43a047"/>
+                <stop offset="1" stop-color="#0b2412"/>
+              </radialGradient>
+            </defs>
+            <rect width="900" height="520" fill="url(#fondo)"/>
+            <circle cx="450" cy="150" r="175" fill="#ffd93d" opacity=".16"/>
+
+            <!-- hojas decorativas -->
+            <g fill="#81c784" opacity=".45">
+              <ellipse cx="90" cy="90" rx="48" ry="18" transform="rotate(-35 90 90)"/>
+              <ellipse cx="150" cy="150" rx="40" ry="15" transform="rotate(20 150 150)"/>
+              <ellipse cx="810" cy="95" rx="48" ry="18" transform="rotate(35 810 95)"/>
+              <ellipse cx="750" cy="160" rx="40" ry="15" transform="rotate(-20 750 160)"/>
+            </g>
+
+            <!-- plato -->
+            <ellipse cx="450" cy="190" rx="205" ry="110" fill="#fff8dc"/>
+            <ellipse cx="450" cy="190" rx="205" ry="110" fill="none" stroke="#ffd93d" stroke-width="9"/>
+            <ellipse cx="450" cy="190" rx="160" ry="80" fill="#f1f8e9"/>
+
+            <!-- ensalada -->
+            <ellipse cx="395" cy="180" rx="58" ry="26" fill="#2e7d32" transform="rotate(-15 395 180)"/>
+            <ellipse cx="495" cy="175" rx="58" ry="26" fill="#43a047" transform="rotate(15 495 175)"/>
+            <ellipse cx="445" cy="155" rx="52" ry="22" fill="#66bb6a"/>
+            <ellipse cx="440" cy="210" rx="68" ry="24" fill="#81c784"/>
+            <ellipse cx="520" cy="205" rx="40" ry="18" fill="#2e7d32" transform="rotate(-10 520 205)"/>
+
+            <!-- rodajas de limón -->
+            <g stroke="#f9a825" stroke-width="3" fill="#ffe066">
+              <circle cx="385" cy="205" r="24"/>
+              <circle cx="495" cy="210" r="24"/>
+            </g>
+            <g stroke="#fff3b0" stroke-width="2" fill="none">
+              <circle cx="385" cy="205" r="17"/><path d="M385 188v34M368 205h34"/>
+              <circle cx="495" cy="210" r="17"/><path d="M495 193v34M478 210h34"/>
+            </g>
+
+            <!-- granos de maíz -->
+            <g fill="#ffd93d">
+              <circle cx="430" cy="190" r="6"/><circle cx="455" cy="195" r="6"/>
+              <circle cx="470" cy="180" r="6"/><circle cx="415" cy="162" r="6"/>
+              <circle cx="480" cy="158" r="6"/><circle cx="440" cy="172" r="6"/>
+            </g>
+
+            <!-- manzana -->
+            <circle cx="170" cy="245" r="46" fill="#8bc34a"/>
+            <circle cx="157" cy="232" r="11" fill="#aed581" opacity=".8"/>
+            <path d="M170 200q4-22 16-28" stroke="#5d4037" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="192" cy="180" rx="15" ry="7" fill="#2e7d32" transform="rotate(-30 192 180)"/>
+
+            <!-- banano -->
+            <path d="M690 260C750 260 795 220 815 155C810 240 765 295 700 300C678 301 674 271 690 260Z" fill="#ffd93d" stroke="#e0a800" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <div class="hero-notes">
+          <div class="note-box">
+            <h3>El Menú de Hoy</h3>
+            <p>Platillos con ingredientes frescos. Revisa las calorías de cada uno antes de elegir.</p>
+          </div>
+          <div class="note-box">
+            <h3>Come Rico, Vive Sano</h3>
+            <p>Elegir bien en la cafetería te da energía para aprender, jugar y rendir en clases.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- GALERIA / CARRUSEL -->
+    <!-- Para agregar mas imagenes: copia un bloque <figure class="slide"> completo y cambia el numero. -->
+    <section id="galeria">
+      <h2 class="sec-title">Galería</h2>
+      <p class="sec-sub">Fotos de nuestra cafetería y de los platillos saludables.</p>
+
+      <div class="carousel" id="carousel">
+      <figure class="slide active">
+        <span class="ph">Espacio para la imagen 1<small>Guarda tu foto como imagenes/carrusel-1.jpg</small></span>
+        <img src="imagenes/images.jpg" alt="Imagen 1 de la galería" onerror="this.remove()">
+      </figure>
+      <figure class="slide">
+        <span class="ph">Espacio para la imagen 2<small>Guarda tu foto como imagenes/carrusel-2.jpg</small></span>
+        <img src="imagenes/yogurt.jpg" alt="Imagen 2 de la galería" onerror="this.remove()">
+      </figure>
+      <figure class="slide">
+        <span class="ph">Espacio para la imagen 3<small>Guarda tu foto como imagenes/carrusel-3.jpg</small></span>
+        <img src="imagenes/pollo.jpg" alt="Imagen 3 de la galería" onerror="this.remove()">
+      </figure>
+      <figure class="slide">
+        <span class="ph">Espacio para la imagen 4<small>Guarda tu foto como imagenes/carrusel-4.jpg</small></span>
+        <img src="imagenes/pupusas.jpg" alt="Imagen 4 de la galería" onerror="this.remove()">
+      </figure>
+        <button type="button" class="car-btn prev" aria-label="Imagen anterior">&#8249;</button>
+        <button type="button" class="car-btn next" aria-label="Imagen siguiente">&#8250;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- MENU DEL DIA -->
+    <section id="menu">
+      <h2 class="sec-title">Menú del Día</h2>
+      <p class="sec-sub">Cada platillo muestra su valor calórico aproximado.</p>
+
+      <div class="filters" role="group" aria-label="Filtrar menú">
+        <button class="chip active" data-filter="todos">Todos</button>
+        <button class="chip" data-filter="desayuno">Desayuno</button>
+        <button class="chip" data-filter="almuerzo">Almuerzo</button>
+        <button class="chip" data-filter="snack">Snacks y Bebidas</button>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-cat="desayuno">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/images.jpg" alt="Avena con Plátano" onerror="this.remove()"></div>
+          <h3>Avena con Plátano</h3>
+          <p>Avena caliente con rodajas de plátano y canela.</p>
+          <div class="kcal"><span class="bar"><i style="--w:21%"></i></span><b>210 kcal</b></div>
+          <span class="tag">Desayuno</span>
+        </article>
+
+        <article class="card" data-cat="desayuno">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/yogurt.jpg" alt="Fruta con Yogurt" onerror="this.remove()"></div>
+          <h3>Fruta con Yogurt</h3>
+          <p>Fruta de temporada picada con yogurt natural.</p>
+          <div class="kcal"><span class="bar"><i style="--w:15%"></i></span><b>150 kcal</b></div>
+          <span class="tag">Desayuno</span>
+        </article>
+
+        <article class="card" data-cat="almuerzo">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/pollo.jpg" alt="Pollo a la Plancha" onerror="this.remove()"></div>
+          <h3>Pollo a la Plancha</h3>
+          <p>Pechuga con ensalada fresca y arroz integral.</p>
+          <div class="kcal"><span class="bar"><i style="--w:42%"></i></span><b>420 kcal</b></div>
+          <span class="tag">Almuerzo</span>
+        </article>
+
+        <article class="card" data-cat="almuerzo">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/pupusas.jpg" alt="Pupusa de Frijol" onerror="this.remove()"></div>
+          <h3>Pupusa de Frijol</h3>
+          <p>Pupusa con poco queso y curtido sin exceso de sal.</p>
+          <div class="kcal"><span class="bar"><i style="--w:23%"></i></span><b>230 kcal</b></div>
+          <span class="tag">Almuerzo</span>
+        </article>
+
+        <article class="card" data-cat="almuerzo">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/sandwich.jpg" alt="Sándwich Integral" onerror="this.remove()"></div>
+          <h3>Sándwich Integral</h3>
+          <p>Pan integral, pavo, lechuga y tomate.</p>
+          <div class="kcal"><span class="bar"><i style="--w:31%"></i></span><b>310 kcal</b></div>
+          <span class="tag">Almuerzo</span>
+        </article>
+
+        <article class="card" data-cat="snack">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/jamaica.webp" alt="Agua de Jamaica" onerror="this.remove()"></div>
+          <h3>Agua de Jamaica</h3>
+          <p>Refrescante y sin azúcar añadida.</p>
+          <div class="kcal"><span class="bar"><i style="--w:2%"></i></span><b>20 kcal</b></div>
+          <span class="tag">Bebida</span>
+        </article>
+
+        <article class="card" data-cat="snack">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/mango.avif" alt="Licuado de Mango" onerror="this.remove()"></div>
+          <h3>Licuado de Mango</h3>
+          <p>Mango natural con leche descremada y hielo.</p>
+          <div class="kcal"><span class="bar"><i style="--w:18%"></i></span><b>180 kcal</b></div>
+          <span class="tag">Bebida</span>
+        </article>
+
+        <article class="card" data-cat="snack">
+          <div class="photo"><span>Foto del platillo</span><img src="imagenes/semillas.jpg" alt="Mix de Semillas" onerror="this.remove()"></div>
+          <h3>Mix de Semillas</h3>
+          <p>Pepitoria, maní y pasas en porción individual.</p>
+          <div class="kcal"><span class="bar"><i style="--w:12%"></i></span><b>120 kcal</b></div>
+          <span class="tag">Snack</span>
+        </article>
+      </div>
+      <p class="small-note">* Calorías aproximadas por porción. La barra usa una referencia de 1000 kcal.</p>
+    </section>
+
+    <!-- CALCULADORA -->
+    <section id="calculadora">
+      <h2 class="sec-title">Calculadora de IMC</h2>
+      <p class="sec-sub">Conoce tu categoría nutricional con tu peso y estatura.</p>
+
+      <div class="calc-grid">
+        <div class="panel">
+          <h3>Categorías</h3>
+          <ul class="scale">
+            <li><i class="dot d1"></i> Bajo peso: menos de 18.5</li>
+            <li><i class="dot d2"></i> Peso normal: 18.5 a 24.9</li>
+            <li><i class="dot d3"></i> Sobrepeso: 25 a 29.9</li>
+            <li><i class="dot d4"></i> Obesidad: 30 o más</li>
+          </ul>
+        </div>
+
+        <form id="imc-form" class="panel" novalidate>
+          <label for="peso">Peso (kg)</label>
+          <input type="number" id="peso" min="10" max="250" step="0.1" placeholder="Ej. 55" required>
+
+          <label for="altura">Estatura (cm)</label>
+          <input type="number" id="altura" min="80" max="230" step="1" placeholder="Ej. 160" required>
+
+          <button type="submit" class="btn">Calcular</button>
+          <div id="resultado" class="resultado" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="consejos">
+      <h2 class="sec-title">Consejos Saludables</h2>
+      <p class="sec-sub">Una guía rápida para armar comidas equilibradas.</p>
+
+      <div class="tips">
+        <div class="tip"><h3>💧 Toma Agua</h3><p>Cambia los refrescos por agua natural o aguas frescas sin azúcar.</p></div>
+        <div class="tip"><h3>🥦 Mitad Verduras</h3><p>Llena la mitad de tu plato con verduras y frutas de colores.</p></div>
+        <div class="tip"><h3>🍚 Granos Integrales</h3><p>Elige arroz, avena o pan integral para tener energía por más tiempo.</p></div>
+        <div class="tip"><h3>🏃 Muévete</h3><p>Al menos 60 minutos de actividad física al día.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Menu Inu</strong> Cafetería escolar saludable</p>
+    <p class="small">Información con fines educativos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
